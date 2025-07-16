@@ -14,9 +14,10 @@ const divide = (arr, n) => {
 			sum += num;
 		}else{
 			if(current.length > 0){
-				result.push(num);
-				sum = num;
+				result.push(current);
+				
 			}
+			current = [num]
 		}
 		if(current.length > 0){
 			result.push(current);
